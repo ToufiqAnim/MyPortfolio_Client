@@ -5,7 +5,9 @@ const ProjectsDetails = () => {
  const project=useLoaderData()
 
   return (
-    <div><h1>Hello</h1></div>
+    <div>
+      <img src={project.name} alt="" />
+    </div>
   )
 }
 

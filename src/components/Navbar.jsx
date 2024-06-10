@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <header className="sticky top-0 bg-[#0a192f] p-3">
             <div className="container mx-auto flex items-center justify-between">
-                <div className="text-2xl font-semibold text-[#64ffda]">
+                <div className="text-5xl font-bold text-[#64ffda]">
                     <Link to="/">Toufiq</Link>
                 </div>
                 <div className="flex space-x-4">
@@ -19,19 +19,19 @@ const Navbar = () => {
                     </HashLink>
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/about#about"
+                        to="/home#about"
                     >
                         About
                     </HashLink>
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/projects#projects"
+                        to="/home#projects"
                     >
                         Projects
                     </HashLink>
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/contact#contact"
+                        to="/home#contact"
                     >
                         Contact
                     </HashLink>

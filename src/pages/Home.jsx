@@ -1,21 +1,23 @@
 import React from 'react';
 import About from './About';
 import Projects from './Projects';
+import Skills from './Skills';
+import Contact from './Contact';
 
 
 
 const Home = () => {
     return (
-        <div className="bg-[#0a192f]">
-            <div className="container mx-auto px-4">
-                <div className="flex justify-center">
-                    <div className="mt-20 p-8 w-full h-96 bg-[#0a192f]">
+        <div id='home' className="bg-[#0a192f]">
+            <div className="container mx-auto px-4 py-16">
+                <div className="flex justify-between items-center h-[65vh]">
+                    <div className="bg-[#0a192f] ">
                         <div className="mx-20">
-                            <h1 className="text-white">
-                                <span className="text-2xl font-extrabold">Hi, I'm</span> <br />
-                                <span className="text-4vw font-extrabold">Toufiqul Islam Anim</span>
+                            <h1 className="text-white ">
+                                <p className="text-2xl font-bold ">Hi, I&apos;m</p> 
+                                <h1 className="text-6xl font-extrabold py-3">Toufiqul Islam Anim</h1>
                             </h1>
-                            <p className="text-white text-xl font-bold mb-8">
+                            <p className="text-white text-xl font-semibold mb-10">
                                 I&apos;m a Junior Web Developer
                             </p>
                             <a
@@ -26,13 +28,18 @@ const Home = () => {
                             </a>
                         </div>
                     </div>
+                 
+                        <img className='w-[500px] rounded-lg' src="https://i.ibb.co/NFWf3rw/image1.jpg" alt="" />
+            
+             
                 </div>
             </div>
            <About/>
            <Projects />
-         {/*    
+           <Skills/>
+     
        
-            <Contact /> */}
+            <Contact /> 
         </div>
     );
 };
