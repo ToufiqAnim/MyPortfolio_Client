@@ -4,11 +4,11 @@ const About = () => {
   return (
     <div id="about" className="mb-10">
       <div className="container mx-auto px-4 ">
-        <h1 className="text-center my-6 font-bold text-[#64ffd4] text-5xl">
+        <h1 className="text-center my-4 font-bold text-[#64ffd4] text-5xl">
           About Me
         </h1>
         <hr className="my-4 mx-auto w-1/4 border-[rgb(100,255,212)]" />
-        <div className="flex flex-col lg:grid grid-cols-2 items-center mt-4 justify-around lg:gap-40 h-[70vh]">
+        <div className="flex flex-col lg:grid grid-cols-2 items-center mt-2 justify-around lg:gap-40 h-[70vh]">
           <div className="text-xl mt-4 lg:mt-0  ">
             <h1 className="text-[#64ffd4] text-3xl mb-10 font-bold">
               Get to know me!
