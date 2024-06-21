@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 
+
 const Navbar = () => {
     return (
         <header className="sticky top-0 bg-[#0a192f] p-3">
@@ -19,19 +20,19 @@ const Navbar = () => {
                     </HashLink>
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/home#about"
+                        to="/about#about"
                     >
                         About
                     </HashLink>
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/home#projects"
+                        to="/projects#projects"
                     >
                         Projects
                     </HashLink>
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/home#contact"
+                        to="/contact#contact"
                     >
                         Contact
                     </HashLink>

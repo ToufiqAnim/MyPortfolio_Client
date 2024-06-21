@@ -1,33 +1,33 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
+import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { GoLinkExternal } from "react-icons/go";
-import { Link } from 'react-router-dom';
-const Project = ({projectData}) => {
-
+import { Link } from "react-router-dom";
+const Project = ({ projectData }) => {
   return (
-    <div key={projectData.id} className="w-full sm:w-1/2 lg:w-1/3 px-4 mb-8">
-    <div className="bg-[#112240] rounded-lg shadow-lg overflow-hidden">
-        <img src={projectData?.demoImage} alt={projectData?.title} className="w-full"/>
-        <div className="p-6">
-            <p className="text-[#ccd6f6] mb-3 flex items-center justify-between">
-                {projectData?.technologies}
-                <span className='flex justify-center mt-3'>
-                    <a className="mx-3" href={projectData?.github} target="_blank" rel="noopener noreferrer">
-                        <BsGithub className='text-3xl'/>
-                    </a>
-                    <a href={projectData?.live} target="_blank" rel="noopener noreferrer">
-                        <GoLinkExternal className='text-3xl'/>
-                    </a>
-                </span>
-            </p>
-            <h2 className="text-[#ccd6f6] text-2xl font-bold mb-2">{projectData.title}</h2>
-            <p className="text-[#ccd6f6]">{projectData?.description}</p>
-        <button className='bg-white text-black px-6 py-3 mt-3'>    <Link to={`/projects/${projectData?._id}`} >Know More</Link></button>
+    <div className="flex flex-col items-center p-8  md:flex-row gap-10 bg-[#0a192f] text-white">
+      <div className="flex flex-col items-center md:w-1/2">
+        <div className="max-w-full">
+          <img
+            src={projectData?.demoImage}
+            alt="Dopefolio Screenshot"
+            className="w-full h-auto"
+          />
         </div>
+      </div>
+      <div className="flex flex-col items-start text-start mt-8 md:mt-0 md:items-start md:text-left md:w-1/3 md:max-w-md">
+        <h2 className="text-3xl font-bold mb-4">{projectData?.title} </h2>
+        <p className="mb-4">
+          Dopefolio is a successful Open-Source project that I created which has
+          been featured on some of the biggest tech sites like CSS-Tricks,
+          Hostinger, etc & used by thousands of developers globally.
+        </p>
+        <button className="bg-[#0a192f] text-[#64ffda] border border-[#64ffda] text-lg px-5 py-3 rounded no-underline">
+          <Link to={`/projects/${projectData?._id}`}>CASE STUDY</Link>
+        </button>
+      </div>
     </div>
-</div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
