@@ -2,8 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-
-
 const Navbar = () => {
     return (
         <header className="sticky top-0 bg-[#0a192f] p-3">
@@ -14,25 +12,25 @@ const Navbar = () => {
                 <div className="flex space-x-4">
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/home#home"
+                        smooth to="/#home"
                     >
                         Home
                     </HashLink>
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/about#about"
+                        smooth to="/#about"
                     >
                         About
                     </HashLink>
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/projects#projects"
+                        smooth to="/#projects"
                     >
                         Projects
                     </HashLink>
                     <HashLink 
                         className="text-[#64ffda] font-semibold text-lg" 
-                        to="/contact#contact"
+                        smooth to="/#contact"
                     >
                         Contact
                     </HashLink>
