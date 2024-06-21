@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { GoLocation, GoDeviceMobile } from "react-icons/go";
 import { MdEmail } from "react-icons/md";

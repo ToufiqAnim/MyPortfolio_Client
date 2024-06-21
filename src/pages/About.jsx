@@ -1,4 +1,3 @@
-import image from "../assets/Toufiq.jpg";
 import Skills from "./Skills";
 
 const About = () => {
@@ -10,9 +9,10 @@ const About = () => {
         </h1>
         <hr className="my-4 mx-auto w-1/4 border-[rgb(100,255,212)]" />
         <div className="flex flex-col lg:grid grid-cols-2 items-center mt-4 justify-around lg:gap-40 h-[70vh]">
-          
           <div className="text-xl mt-4 lg:mt-0  ">
-          <h1 className="text-[#64ffd4] text-3xl mb-10 font-bold">Get to know me!</h1>
+            <h1 className="text-[#64ffd4] text-3xl mb-10 font-bold">
+              Get to know me!
+            </h1>
             <p className="text-[#ccd6f6] leading-10">
               Hello! I&apos;m Toufiqul Islam Anim, a passionate Junior Web
               Developer based in Dhaka, Bangladesh. With a strong foundation in
@@ -32,11 +32,10 @@ const About = () => {
               Contact Me
             </a>
           </div>
-          
-        <div>
-    
-        <Skills />
-        </div>
+
+          <div>
+            <Skills />
+          </div>
         </div>
       </div>
     </div>

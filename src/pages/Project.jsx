@@ -1,7 +1,4 @@
 /* eslint-disable react/prop-types */
-import React from "react";
-import { BsGithub } from "react-icons/bs";
-import { GoLinkExternal } from "react-icons/go";
 import { Link } from "react-router-dom";
 const Project = ({ projectData }) => {
   return (
